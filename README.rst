@@ -28,13 +28,14 @@ This `pytest`_ plugin was generated with `Cookiecutter`_ along with `@hackebrot`
 Features
 --------
 
-* TODO
+* Access the sections of your .ini file.
 
 
 Requirements
 ------------
 
-* TODO
+* plaster_pastedeploy
+* pytest >= 5.3.5
 
 
 Installation
@@ -48,7 +49,18 @@ You can install "pytest-settings" via `pip`_ from `PyPI`_::
 Usage
 -----
 
-* TODO
+* Import the `settings` and you are good to go, each key matches a configuration section::
+
+    from pytest_settings import settings
+
+* Then you can access the sections like this::
+
+    my_section = settings['mysection']
+
+* And each value in the section::
+
+    my_value = settings['mysection']['myvalue']
+
 
 Contributing
 ------------
