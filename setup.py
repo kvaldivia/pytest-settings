@@ -28,7 +28,7 @@ setup(
     description="Access your configuration file's parsed settings from your tests",
     long_description=read('README.rst'),
     py_modules=['pytest_settings'],
-    python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
+    python_requires='>=3.6.9',
     install_requires=requires,
     classifiers=[
         'Development Status :: 4 - Beta',
